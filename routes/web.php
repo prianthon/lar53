@@ -14,9 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/about', function() {
-	return view('about');
-});
+
+Route::get('/about', 'MyController@showAbout');
+
 Route::get('/testmodel', function() {
 	$post = new App\Post;
 	$post->title = "7 Amalan Pembuka Jodoh";
