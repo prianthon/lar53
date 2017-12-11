@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/about', function() {
-	return '<h1>Halo</h1>'
-		.'Selamat datang di webapp saya<br>'
-		.'Laravel, emang keren.';
+	return view('about');
 });
 Route::get('/testmodel', function() {
 	$post = new App\Post;
